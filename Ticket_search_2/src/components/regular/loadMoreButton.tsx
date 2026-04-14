@@ -1,6 +1,6 @@
 
 
-
+import  style  from "../styles/LoadMoreButton.module.css";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import { loadMoreTickets } from "../../store/slice";
 import { selectFilteredTickets } from "../../store/selectFilteredTickets";
@@ -12,11 +12,12 @@ export const LoadMoreButton = () => {
     const hasMore = visibleCount < tickets.length;
 
     return (
-        <div>
+        <div className = {style.button_container}>
             <button
                 type="button"
                 onClick={() => dispatch(loadMoreTickets())}
                 disabled={!hasMore}
+                className={style.button}
             >
                 {hasMore ? "Загрузить еще билеты" : "Билеты загружены"}
             </button>

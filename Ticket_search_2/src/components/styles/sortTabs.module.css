@@ -3,12 +3,13 @@
     flex-direction: column;
     gap: 20px;
 }
-@media (max-width: 769px) {
+
+@media (max-width: 768px) {
     .sortTabs {
-        flex-direction: row;
+        flex-direction: row-reverse;
+        justify-content: start;
         gap: 40px;
     }
-    
 }
 
 .sort_tabs__transfer {
@@ -16,18 +17,90 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
+    background-color: #F3F1F8;
+    padding: 20px;
+    border-radius: 8px;
 }
 
 .sort_tabs__transfer h3 {
-    margin: 0 0 0 19px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #4E148C;
+}
+
+@media (max-width: 768px) {
+    .sort_tabs__transfer {
+        background-color: transparent;
+        padding: 0;
+    }
+    
+    .sort_tabs__transfer h3 {
+        color: white;
+    }
 }
 
 .sort_tabs__transfer label {
     display: flex;
     align-items: center;
-    gap: 19px;
+    gap: 12px;
     flex-wrap: nowrap;
-    margin: 0 0 0 45px;
+    margin: 0;
+    cursor: pointer;
+    font-size: 14px;
+    color: #9B9B9B;
+}
+
+@media (max-width: 768px) {
+    .sort_tabs__transfer label {
+        color: white;
+    }
+}
+
+.sort_tabs__transfer input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #4E148C;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .sort_tabs__transfer input[type="checkbox"] {
+        border-color: white;
+    }
+}
+
+.sort_tabs__transfer input[type="checkbox"]:checked {
+    background-color: #4E148C;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .sort_tabs__transfer input[type="checkbox"]:checked {
+        background-color: white;
+    }
+}
+
+.sort_tabs__transfer input[type="checkbox"]:checked::after {
+    content: "✓";
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+}
+
+@media (max-width: 768px) {
+    .sort_tabs__transfer input[type="checkbox"]:checked::after {
+        color: #4E148C;
+    }
 }
 
 .sort_tabs__company {
@@ -35,18 +108,92 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
+    background-color: #F3F1F8;
+    padding: 20px;
+    border-radius: 8px;
 }
 
 .sort_tabs__company h3 {
-    margin: 0 0 0 19px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #4E148C;
+}
+
+@media (max-width: 768px) {
+    .sort_tabs__company {
+        background-color: transparent;
+        padding: 0;
+    }
+    
+    .sort_tabs__company h3 {
+        color: white;
+    }
 }
 
 .sort_tabs__company label {
     display: flex;
     align-items: center;
-    gap: 19px;
+    gap: 12px;
     flex-wrap: nowrap;
-    margin: 0 0 0 45px;
+    margin: 0;
+    cursor: pointer;
+    font-size: 14px;
+    color: #9B9B9B;
+}
+
+@media (max-width: 768px) {
+    .sort_tabs__company label {
+        color: white;
+    }
+}
+
+.sort_tabs__company input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #4E148C;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: transparent;
+    position: relative;
+    transition: all 0.2s;
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .sort_tabs__company input[type="checkbox"] {
+        border-color: white;
+    }
+}
+
+.sort_tabs__company input[type="checkbox"]:checked {
+    background-color: none;
+
+}
+
+@media (max-width: 768px) {
+    .sort_tabs__company input[type="checkbox"]:checked {
+        background-color: none;
+    }
+}
+
+.sort_tabs__company input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #4E148C ;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+    .sort_tabs__company input[type="checkbox"]:checked::after {
+        background-color: white;
+    }
 }
 
 

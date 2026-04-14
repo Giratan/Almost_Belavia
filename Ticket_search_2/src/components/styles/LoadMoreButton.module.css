@@ -1,0 +1,23 @@
+.button_container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.button {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: #4E148C;
+    border-radius: 10px;
+    border: none;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    cursor: pointer;
+}

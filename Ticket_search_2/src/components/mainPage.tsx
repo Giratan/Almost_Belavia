@@ -44,17 +44,19 @@ export const MainPage = () => {
                 <Assortment />
 
                 {width <= 768 && (
-                    <div className="settings_menu__dropdown">
-                        <span className="dropdown_display">{filtersText}</span>
+                    <div className={styles.settings_menu__dropdown}>
+                        <div className={styles.settings_menu__dropdown_header}>
+                            <span className={styles.dropdown_display}>{filtersText}</span>
 
-                        <div className="dropdown_display__button_place">
-                            <button onClick={handleToggleDropdown}>
-                                <span>Открыть настройки</span>
-                                <img src={Arrow} alt="Показать фильтры" />
-                            </button>
+                            <div className={styles.dropdown_display__button_place}>
+                                <button onClick={handleToggleDropdown}>
+                                    <span>Открыть настройки</span>
+                                    <img src={Arrow} alt="Показать фильтры" />
+                                </button>
+                            </div>
                         </div>
 
-                        {isDropdownOpen && <SortTabs className="styles.sort_tabs_mobile" />}
+                        {isDropdownOpen && <SortTabs className={styles.sort_tabs_mobile} />}
                     </div>
                 )}
 

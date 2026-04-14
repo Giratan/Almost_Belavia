@@ -48,8 +48,8 @@
 
 @media (min-width: 769px) {
   .focal_section {
-    width: 45vw;
-    max-width: 45vw;
+    width: 50vw;
+    max-width: 75vw;
   }
 }
 
@@ -58,3 +58,48 @@
   flex-direction: column;
   gap: 20px;
 }
+
+
+
+
+
+.settings_menu__dropdown {
+  background-color: #4E148C;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dropdown_display {
+  font-family: Inter sans-serif;
+  font-size: 16px;
+  font-weight: medium;
+  display: block;
+}
+
+.dropdown_display__button_place button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  padding: 0;
+}
+
+.dropdown_display__button_place button img {
+  width: 16px;
+  height: 16px;
+}
+
+.settings_menu__dropdown_header {
+    display: flex;
+    flex-direction: collumn;
+    justify-content: space-between;
+}
+

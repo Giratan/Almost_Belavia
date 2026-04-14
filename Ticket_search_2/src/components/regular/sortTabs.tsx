@@ -23,7 +23,6 @@ export const SortTabs = ({className}: Props) => {
     return(
 
         <div className = { `${className} ${styles.sortTabs}` }>
-            {/* чекбоксы должны реализовывать логику фильтрации по пересадкам и компаниям (параметр для выполнения логики берется из значения value) */}
             <div className = {styles.sort_tabs__transfer}>
                 <h3>Количество пересадок</h3>
                 <label>
