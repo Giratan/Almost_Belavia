@@ -1,0 +1,53 @@
+.sortTabs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+@media (max-width: 769px) {
+    .sortTabs {
+        flex-direction: row;
+        gap: 40px;
+    }
+    
+}
+
+.sort_tabs__transfer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.sort_tabs__transfer h3 {
+    margin: 0 0 0 19px;
+}
+
+.sort_tabs__transfer label {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    flex-wrap: nowrap;
+    margin: 0 0 0 45px;
+}
+
+.sort_tabs__company {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.sort_tabs__company h3 {
+    margin: 0 0 0 19px;
+}
+
+.sort_tabs__company label {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    flex-wrap: nowrap;
+    margin: 0 0 0 45px;
+}
+
+
+

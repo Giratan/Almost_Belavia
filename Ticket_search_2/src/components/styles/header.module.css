@@ -1,0 +1,44 @@
+.header {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 15px 20px 27px 20px;
+
+}
+
+.header__icon {
+    position: center;
+    width: 68px;
+    height: 54px;
+}
+
+.header__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* На мобильных (dropdown) - строго по центру */
+@media (max-width: 768px) {
+    .header {
+        justify-content: center;
+    }
+}
+
+/* На десктопе (sortTabs слева) - отступ слева как у sortTabs */
+@media (min-width: 769px) {
+    .header {
+        margin-left: 25vw;
+        margin-right: auto;
+        padding-left: 20px;
+    }
+    .header__icon{
+        width: 100px;
+        height: 80.45px;
+    }
+}
+
+

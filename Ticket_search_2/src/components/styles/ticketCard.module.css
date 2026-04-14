@@ -1,0 +1,48 @@
+.ticket_card {
+    background-color: #E8EBF2 ;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+    padding: 0 25px;
+}
+
+.ticket_card__header {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 38px;
+}
+.ticket_card__header h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.ticket_card__image {
+    margin: 0;
+    padding: 0;
+}
+
+.ticket_card__body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding-bottom: 25px;
+}
+
+.ticket_card__body__info{
+
+}
+
+.ticket_card__body__duration {
+
+}
+
+.ticket_card__body__transfer {
+
+}
